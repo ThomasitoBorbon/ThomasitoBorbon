@@ -1,0 +1,28 @@
+ .main{
+     display: block;
+     font-family: helvetica;
+     width: 150px;
+     height: 150px;
+     background-color: red;
+     padding-left: 10px;
+     color:white;
+     float: left;
+ }
+ .nav1{
+     list-style-type: none;
+ }
+ .navb{
+      display: inline-block;
+      width: 125px;
+      padding: 8px 0px;
+      color: white;
+      margin: 15px;
+      background-color: grey;
+      border-radius: 10px;
+ }
+ .navlist{
+      display: flex;
+      margin: 0%;
+      padding: 0%;
+      justify-content: center;
+ }

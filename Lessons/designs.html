@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en-us">
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RWD Examples</title>
+<style>
+  /*      SMALL SCREENS      */
+  /* The default styles that apply to small screens */
+   body {
+      background-color: #91101B;
+      color: #fff;
+    }
+    h2 {
+      color: #DED945;
+    }
+
+    article {
+      width: 90%;
+      border: solid .25vw;
+      margin: auto;
+    }
+
+    img {
+      display: block;
+      width: 90%;
+      height: 90%;
+      margin: auto;
+    }
+
+  /*      MEDIUM SCREENS.      */
+  /* On screens that are 600 wide or wider */
+  @media (min-width: 600px) {
+    body {
+      background-color: teal;
+      color: maroon;
+    }
+    
+    h1, h2 {
+    color: #189ADE;
+    }
+
+    article {
+      width: 42%;
+      padding: 1%;
+      border: solid .25vw;
+      margin: 0% .5%;
+      float: left;
+    }
+    .wood img, .modern img {
+      width: 50%;
+      height: 100%;
+      float: left;
+      margin-right: 10px;
+    }
+    .wood {
+      width: 60%;
+    }
+    .paddle {
+      width: 30%;
+    }
+    .iron {
+      width: 30%;
+    }
+    .modern {
+      width: 60%;
+    }
+    .iron img, .paddle img {
+      width: 100%;
+      height: 50%;
+      padding: 0% 0% 2% 2%;
+      margin: 0;
+      float: right;
+    }
+    .medium{
+      display: none;
+    footer {
+      clear: both;
+    }
+  }
+
+  /*      LARGE SCREENS      */
+  /* On screens that are 992px wide or wider, the background color is blue */
+
+  @media (min-width: 992px) {
+    body{
+      background-color: purple;
+      color: black;
+    }
+    h1,h2{
+      color: #fca311;
+    }
+     article{
+      padding: .5%;
+      border: solid .25vw;
+      margin: 0% 0% 0% .5%; 
+      clear: none;
+    }
+    .wood{
+      width: 96%; 
+    }
+    .paddle{
+      width: 42%;
+      float: left;
+      display: block;
+    }
+    .iron{
+      width: 25%;
+      float: left;
+    }
+    .modern{
+      width: 25%;
+      float: left;
+    } 
+    .wood img{
+      width: 50%;
+      float: left;
+    }
+    .paddle img{
+      width: 30%;
+      float: left;
+      margin-right: 5px;
+    }
+    .iron img, .modern img{
+      width: 100%;
+    }
+    .large{
+      display: none;
+    }
+  } 
+
+  </style>
+ <body>
+
+<h1 style="text-align:center;">Thomas Borbon Jr.</h1>
+
+<article class="wood">
+    <h2>Wooden ships</h2>
+      <img src="https://webdevusa.net/06-CSSlayout/images/canoe.png" alt="An ancient canoe" width="300px" height="200px">
+      <p>The first boats were probably logboats, rafts and skinboats. The earliest logboats in Europe are 8-9000 years old. Early planked boats were often sewn or stitched together. Ships of Antiquity were assembled by the mortise and tenon fashion. From Medieval times, planks were fastened with wooden pegs or iron rivets.During the next 150 years, steam or combustion engine ships would compete against sail. The last great sailing ships were in service in South America in the 1950s.</p>
+      <p>The first boats were probably logboats, rafts and skinboats. The earliest logboats in Europe are 8-9000 years old. Early planked boats were often sewn or stitched together. Ships of Antiquity were assembled by the mortise and tenon fashion. From Medieval times, planks were fastened with wooden pegs or iron rivets.During the next 150 years, steam or combustion engine ships would compete against sail. The last great sailing ships were in service in South America in the 1950s.</p>
+      <p>The first boats were probably logboats, rafts and skinboats. The earliest logboats in Europe are 8-9000 years old. Early planked boats were often sewn or stitched together. Ships of Antiquity were assembled by the mortise and tenon fashion.wn or stitched together. Ships of Antiquity were assembled by the mortise and tenon fashion. From Medieval times, planks werewn or stitched together. Ships of Antiquity were assembled by the mortise and tenon fashion. From Medieval times, planks were wn or stitched together. Ships of Antiquity were assembled by the mortise and tenon fashion. From Medieval times, planks were wn or stitched together. Ships of Antiquity were assembled by the mortise and. 
+         </article>
+
+<article class="paddle">
+    <h2>Paddles ships</h2>
+      <img src="https://webdevusa.net/06-CSSlayout/images/paddleBoat.png" alt="Paddle Boat on the Mississippi" width="300px" height="200px">
+      <p>In 1807 the American Robert Fulton created the first steam-driven ship. It had a wooden hull and used paddles. Around 1830, ships propellers were gradually developed by several inventors, including Josef Ressel, John Patch and Francis Pettit Smith. During the next 150 years, steam or combustion engine ships would compete against sail. The last great sailing ships were in service in South America in the 1950s.</p>
+      <p>In 1807 the American Robert Fulton created the first steam-driven ship. It had a wooden hull and used paddles. Around 1830, ships propellers were gradually developed by several inventors, including Josef Ressel, John Patch and Francis Pettit Smith. During the next 150 years, steam or combustion engine ships would compete against sail. The last great </p>
+      <p class="medium">  by several inventors, including Josef Ressel, John Patch and Francis Pettit Smith. During the next 150 years, steam or combustion engine ships would compete against sail. The last great </p>
+      <p class="medium">  by several inventors, including Josef Ressel, John Patch and Francis Pettit Smith. During the next 150 years, steam or combustion engine ships would compete against sail. The last great </p>
+      <p class="medium"> by several inventors, including Josef Ressel, John Patch and Francis Pettit Smith. During the next 150 years, steam or combustion engine ships would compete against sail. The last great</p>
+    
+</article>
+
+<article class="iron">
+    <h2>Iron ships</h2>
+      <img src="https://webdevusa.net/06-CSSlayout/images/ironShip.png" alt="RMS Titanic" width="300px" height="200px">
+      <p>During the 19th century, iron and steel gradually took over the wooden hull production. Steel was preferred since it is stronger than iron, and from the 1870s, steel was used instead of the weaker wrought iron plates. The first iron and steel hulls were riveted, but from the 1940s and onwards, steel ships are usually welded. </p>
+      <p class="large">During the 19th century, iron and steel gradually took over the wooden hull production. Steel was preferred since it is stronger than iron, and from the 1870s, steel was used instead of the weaker wrought iron plates. The first iron and steel hulls were riveted, but from the 1940s and onwards, steel ships are usually welded. during the 19th </p>
+      <p class="medium">During the 19th century, iron and steel gradually took over the wooden hull production. Steel was preferred since it is stronger than iron, and from the 1870s, steel was used instead of the weaker wrought iron plates. The first iron and steel hulls were riveted, but from the 1940s and onwards, steek ships are usually welded.  </p>
+</article>
+
+<article class="modern">
+    <h2>Modern Ships</h2>
+      <img src="images/yacht.jpeg" alt="Dream away" width="480px" height="320px">
+      <p>Modern yachts, like the private luxury yacht seen in this photo is made of fiberglass.  It all starts when the mold is created.  The mold is sprayed with gelcoat, then fiberglass cloth is applied, and then resin is used to saturate the fiberglass. When the resin cures, you have a hull of a boat.  The yacht shown here measures an incredible 180 metres, making her one of the longest private  
+      <p class="large">This floating palace was launched by Lurssen in 2013.  On its seven decks you'll find a helipad, a salon measuring 520m and, as rumour has it, even a private submarine and antimissile system. This beauty was the highlight of last years Monaco Yacht Show and it's not difficult to see why. While passengers can pamper themselves in the gym or sauna, with a massage or at the hairdressers, at night the whirlpool turns into an open</p> 
+      <p class="large">air party under the Monaco skies.  A one week holiday on board this yacht will cost one million dollars, but for only 175 million you can buy the whole thing.This yacht measures an incredible 180 metres, making her one of the longest private luxury yachts in the world. This floating palace was launched by Lurssen in 2013.  On its seven decks </p>
+      <p class="large">you'll find a helipad, a salon measuring 520m and, as rumour has it, even a private submarine and antimissile system. This beauty was the highlight of last years Monaco Yacht Show and it's not difficult to see why. While passengers can pamper themselves in the gym or sauna, with a massage or at the hairdressers, at night the whirlpool turns into an open air party under the Monaco skies.</p>
+</article>
+
+<footer>
+<p><strong>Source:</strong> Akesson, Per. "History of Shipbuilding", https://www.abc.se/~pa/bld/tradbld.htm.</p>
+</footer>
+
+
+</body>
+ </html>

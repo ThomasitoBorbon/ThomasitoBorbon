@@ -1,0 +1,222 @@
+  }
+ table {
+    border: 2px solid black;
+    width: 40%; 
+    margin: auto;
+ }
+ caption{
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif
+ }
+ th {
+	background: #212733;
+	padding: 5px 4px;
+	border-right: 1px solid #c8c7c7;
+	color:white;
+    font-family: Arial, Helvetica, sans-serif
+}
+tr:nth-child(even) {
+	background: rgb(153, 151, 151);
+}
+
+tr:nth-child(odd) {
+	background: rgb(187, 187, 187);
+}
+
+td { 
+	padding: 6px;
+	border-right: 1px solid #212733;
+	border-bottom: 1px solid #212733;
+    font-family: Arial, Helvetica, sans-serif
+}
+ 
+ @media (min-width: 600px){
+.container6{
+    display: inline-block;
+}
+.table{
+    float: left;
+}
+.tablelist{
+    width: 100%;
+}
+.container7{
+    max-width: 49%;
+    float: left;
+}
+.container8{
+max-width: 49%;
+float: left;
+}
+.container9{
+    width:96%;
+    float: left;
+}
+.container10{
+    
+}
+.skyline{
+    text-decoration: none;
+    color:#d7014a;
+ }
+ .skyline:hover{
+    color: white;
+ }
+.pop{
+    text-align: center;
+}
+.skylink{
+    color:white;
+ }
+.auto1{
+    text-align: center;
+}
+.auto2{
+    float: left;
+    max-width: 100%;
+    margin-right: 1%;
+}
+.liCherry{
+    text-align:center;
+}
+.liSummer{
+    text-align: right;
+}
+.gameshow{
+    float: left;
+    margin-right: 1%;
+}
+.cherryimage{
+    float: left;
+    max-width: 100%;
+    margin-right: 1%;
+}
+.autumnimg{
+    float: left;
+    margin-right: 1%;
+}
+.mitama{
+    float: left;
+    width: 45%;
+    margin-right: 1%;
+}
+.sumida {
+    float: left;
+    width:50%;
+    margin-left:1%;
+}
+.sumida img{
+    float: right;
+    margin-left: 1%;
+    max-width: 100%
+}
+.bono{
+    width:100%;
+    display: inline-block;
+
+}
+.bono img{
+    float: left;
+    margin-right: 1%;
+    max-width: 100%
+}
+.footer{
+    display: block;
+}
+
+}
+ @media (min-width: 992px){
+    {}
+.container6{
+    display: inline-block;
+}
+.table{
+    float: left;
+}
+.tablelist{
+    width: 100%;
+}
+.container7{
+    max-width: 49%;
+    float: left;
+}
+.container8{
+max-width: 49%;
+float: left;
+}
+.container9{
+    width:96%;
+    float: left;
+}
+.container10{
+    
+}
+.skyline{
+    text-decoration: none;
+    color:#d7014a;
+ }
+ .skyline:hover{
+    color: white;
+ }
+.pop{
+    text-align: center;
+}
+.skylink{
+    color:white;
+ }
+.auto1{
+    text-align: center;
+}
+.auto2{
+    float: left;
+    max-width: 100%;
+    margin-right: 1%;
+}
+.liCherry{
+    text-align:center;
+}
+.liSummer{
+    text-align: right;
+}
+.gameshow{
+    float: left;
+    margin-right: 1%;
+}
+.cherryimage{
+    float: left;
+    margin-right: 1%;
+}
+.autumnimg{
+    float: left;
+    margin-right: 1%;
+}
+.mitama{
+    float: left;
+    width: 45%;
+    margin-right: 1%;
+}
+.sumida {
+    float: left;
+    width:50%;
+    margin-left:1%;
+}
+.sumida img{
+    float: right;
+    margin-left: 1%;
+}
+.bono{
+    width:100%;
+    display: inline-block;
+
+}
+.bono img{
+    float: left;
+    margin-right: 1%;
+}
+.footer{
+    display: block;
+}
+div{
+   /* border: 2px solid white; */
+} 
+}

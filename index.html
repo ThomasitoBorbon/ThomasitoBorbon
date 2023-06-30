@@ -1,0 +1,379 @@
+<!doctype html> 
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title> Art in my room </title>
+  <script src="intro.js"> 
+
+  </script>
+  <style>
+    @media (min-width: 992px) {
+     body {
+      background: linear-gradient(#032363, #A7A8AA);
+    }
+    .wrapper {
+      max-width: 80%;
+      margin: 10% auto;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      /*grid-template-areas:
+       'text1 text2 text3 text4'
+       'bold5 toro6 bats7 chap8' */
+      gap: 10px;
+      background-color: #032363;
+      padding: 10px;
+      border: 10px solid black;
+      border-radius: 10px;
+    }
+
+    .wrapper > div {
+      background-color: beige;
+      text-align: center;
+      padding: 5px 0;
+      font-size: 20px; 
+
+    }
+    .detail{
+      grid-column: 1/ span 4;
+    }
+    .bold{
+      grid-row: 2/ span 3;
+    }
+    .toro{
+      grid-row: 2/ span 3;
+    }
+    .bats{
+      grid-row: 2/ span 3;
+    }
+    .chap{
+      grid-row: 2/ span 3;
+    }
+    .bold img:hover, .bats img:hover{
+      border: solid black 10px;
+      /*float: left; */
+      margin: 0px 5px 0px 5px;
+      transition: transform 1.2s ease-in-out;
+      transform: scale(2);
+    }
+    .toro img:hover, .chap img:hover{
+      border: solid beige 10px;
+      /*float: left; */
+      margin: 0px 5px 0px 5px;
+      transition: transform 1.2s ease-in-out;
+      transform: scale(2);      
+    }
+    p{
+      margin: 0px 5px 0px 5px;
+      font-family: arial;
+    }
+    h1{
+      text-align: center;
+      font-size: 120px;
+    }
+    h2{
+      font-family: georgia;
+    }
+    /* Table CSS */
+    .art, .art td {
+      border: 1px solid black;
+      max-width: 60%; 
+      border-collapse: collapse; 
+      /*margin:auto; */
+    } 
+    .OA{
+      background-color: #D9D9D9
+    }
+    .desc{
+      background-color: #BABABA;
+      max-width: 30%; 
+     }      
+     .real:hover{
+      transition: transform 1.2s ease-in-out;
+      transform: scale(2);
+     }
+     .foot{
+       align-items: center;
+     }
+     th:first-child,
+     td:first-child{
+       width:5%;
+     }
+     th:nth-child(2),
+     td:nth-child(2) {
+       width:25%;
+     }
+     th:nth-child(3),
+     td:nth-child(3) {
+       width: 2%;
+     }
+     th:nth-child(4),
+     td:nth-child(4) {
+       width: 2%;
+     }
+     .fav{
+     }
+     .foot{
+       padding-left:35%;
+     }
+     /* NavBar */
+     .leftbar{
+       border: solid #032363 5px;
+       width: 100%;
+       text-align: center;
+       background-color: #032363;
+       display: block;
+     }
+     .navlist{
+      display: flex;
+      margin: 0%;
+      padding: 0%;
+      justify-content: center;
+     }
+     .inNav{
+      list-style-type: none;
+     }
+     .link{
+      display: inline-block;
+      width: 125px;
+      padding: 8px 0px;
+      color: white;
+      margin: 15px;
+      background-color: grey;
+      border-radius: 10px;
+     }
+     .link:hover{
+      transition: transform .5s ease-in-out;
+      transform: scale(1.2)
+     }
+     .link:link{
+      text-decoration: none;
+      font-family: sans-serif;
+      color: white;
+     }
+     form{
+      border: 2px solid black;
+      width: 20%;
+      padding: 0% 2%;
+      background-image: url(images/wallpic.jpg)
+     }
+     .namebox{
+      width: 25%; 
+     }
+     input[type=submit] {
+      background-color: grey;
+      color: white;
+      border: none;
+      margin: 5px 2px;
+      padding: 10px 10px;
+     }
+     input[type=reset]{
+      background-color: grey;
+      color: white;
+      border: none;
+      margin: 5px;
+      padding: 10px 10px;
+     }
+     .pform, label{
+      color: white;
+      font-size: 15;
+     }
+     .firstpeek{
+      color: black;
+      border: solid black 5px;
+      background-color: white;
+      border-radius: 25px;
+      font-family: helvetica;
+     }
+     .bottom{
+      background-color: #A7A8AA;
+      padding: 2% 2%
+     }
+     .texbottom{
+      text-decoration: none;
+      color: white;
+      font-size: 50px;
+      font-family: arial;
+      display: block; 
+     }
+     .media{
+      display: block;
+      border: black solid 2px;
+      background-color: white;
+      width: 30%;
+      padding-left: 65px;
+      padding-right: 65px;
+     }
+  }   
+  </style>
+</head>
+<body>
+  <nav class="leftbar">
+    <ul class="navlist">
+      <li class="inNav"> <a class="link" href="#serve"> form </a></li>
+      <li class="inNav"> <a class="link" href="index.html"> home </a> </li>
+      <li class="inNav"> <a class="link" href= "#yessir"> table </a> </li> 
+      <li class="inNav"> <a class="link" href="https://www.youtube.com/watch?v=PQNHRcSMjxw"> no link </a></li> 
+      <li class="inNav"> <a class="link" href="#"> actual no link </a></li>
+    </ul>
+  </nav>
+  <h1 class="firstpeek">The kickstarters of creativity</h1>
+  <div class="wrapper">
+    <div class="detail"> 
+      <h2> The art in my room has many meanings, they all have different stories behind them and are reminders of who I am.</h2>
+    </div>
+    <div class="bold"> <img src="images/boldbrash.jpg" alt="contemporary squidward" width="200px" height=" 250px"> 
+      <h2><em> "Bold and Brash" <br> est.2018 </em></h2>
+        <p>Painted on canvas by my cousin she made this at my request. I had completely forgotten about this idea, than on my birthday I was surprised to see the painting was her gift to me.</p> 
+    </div>
+    <div class="toro"><img src="images/toro.jpg" alt="Thomas riding a bull" width="200px" height="250px">
+      <h2> <em> "Toro" <br> est.2020 </em> </h2>
+        <p> This was another gift from my cousin it is my personal favorite of the four on display here. Incredible display of skill and the painting is converted from a real life photograph of my father.  </p>
+    </div>
+    <div class="bats"> <img src="images/bats.jpg" alt="batman gallery" width="200px" height="250px"> 
+      <h2> <em> "Batman" <br> est.2013</em></h2>
+        <p>I can't remember where I got this picture from, all I remember is that its the oldest picture out of all these. I love batman but more specifically his villains. They are the best of any superhero.</p>
+    </div>
+    <div class="chap"> <img src="images/chap.jpg" alt="Rick James" width="200px" height="250px"> 
+      <h2> <em> "Chappelle" <br> est.2022 </em> </h2>
+        <p>The most recent of the 4. I bought this on Roosevelt street during First Friday, the "Rick James" Chappelle is my favorite skit by far. I like Chappelle or comedians in general who say outlandish things.</p>
+    </div>
+  </div>
+
+  <table id="yessir" class="art">
+    <thead>
+        <th>Name</th>
+        <th> Description</th>
+        <th> Picture</th>
+        <th>Favorites </th>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td class="OA">Framed Kobe Dunk</td>
+        <td class="desc">Kobe Bryant doing a tomahawk dunk against the New Jersey Nets. Kobe inspires me and my peers tremendously I can't remember a time when people were as good at things as they are now because of the "Mamba Mentality". Kobe was a beast.</td>
+        <td class="real"><img src="images/kobe.jpg" alt="Kobe Bryant dunking" width="150px" height="100px"></td>
+        <td> Top 3 Nba player</td>
+      </tr>
+      <tr>
+        <td class="OA">Cantinflas on a truck</td>
+        <td class="desc">This old school red truck sports a stone with a drawing of Cantinflas. Made by dad stones were his canvas varying from drawings, carvings, or forming something out of stone. Quite a formidable artist he is as creative as it gets.</td>
+        <td class="real"><img src="images/cantinflas.jpg" alt="red truck with carving" width="150px" height="100px"></td>
+        <td> Old soul at heart</td>
+      </tr>
+      <tr>
+        <td class="OA">Sonora State Outline</td>
+        <td class="desc"> Carved into and drawn by my dad this was one of his bigger pieces that he made and one of my favorites. Proud of where he was from he added the text "Puro Sonora Cabrones" quite the character if you ask me. I to am proud of this heritage as well.</td>
+        <td class="real"><img src="images/sonora-rock.jpg" alt="Sonora State Outline" width="150px" height="100px"></td>
+        <td class="fav" rowspan="3">These 3 are my favorites of all!</td>
+      </tr>
+      <tr>
+        <td class="OA">Self-Sketch.jpg</td>
+        <td class="desc">While waiting for my lunch at Taco Bell this random guy approaches me and tells me "Hey whats up bro I drew you". The drawing is pretty spot on I feel, the original drawing did not have any color so I put it in photoshop and gave it some pretty nice colors that really make it pop in my opinion. What a strange experience.</td>
+        <td class="real"><img src="images/Self-sketch.jpg" alt="sketch of myself" width="150px" height="100px"></td>
+      </tr>
+      <tr>
+        <td class="OA">Venado and mezquite</td>
+        <td class="desc">Deer and Mezquite drawn onto the stone with the outlining carved into it. My dad made all types of things relating to nature and animals, he was a cowboy at heart.</td>
+        <td class="real"><img src="images/venado.jpg" alt="rocking carving of deer" width="150px" height="100px"></td>
+      </tr>
+      <tr>
+        <td colspan="4" style="text-align: center;"> <em> The decorations in my room are all tremendous motivators and inspire me very often, when I feel blue the decor in my room always alleviates me. </em> </td>
+      </tr>
+    </tbody>
+    <tfoot >
+      <tr>
+        <td class="foot" colspan="4"> <strong>Source: My Mind and Room </strong></td>
+      </tr>
+    </tfoot>
+  </table>
+  <br>
+  <div class="media">
+    <h2> Presenting my oldest and biggest art piece! </h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dfkFNlFe2PI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+  </div>
+  <br>
+  <div id="playtime" style="font-family: helvetica;"></div>
+  <br>
+  <button onclick="document.getElementById('cheetos').src='images/cheetoos.jpg'"> Press this </button>
+  <img id="cheetos" src="images/gulp.jpg" style="width: 150px;">
+  <button onclick="document.getElementById('cheetos').src='images/gulp.jpg'"> Press that </button>
+  <h2> My Top 5 artworks on this page.</h2>
+  <ol style="list-style-type:upper-roman;">
+    <li> Toro 
+        <ul style="list-style-type: square;">
+          <li>Depiction of my father</li>
+          <li>Made by hand</li>
+          <li>Awesome background</li>
+        </ul>
+    </li>
+    <li>Sonora State Outline</li>
+    <li>Venado and Mezquite</li>
+    <li>Self-Sketch.jpg</li>
+    <li>Bold and Brash </li>
+  </ol>
+
+  <form id="serve" method="post" action="http://smccweb.org/example/contactA.php">
+    <h2 class="pform">Buen dia amigo!</h2>
+    <label for="fname"> Full name </label>
+    <br>
+    <input type="text" id="fname" name="name" value>
+    <br>
+    <br>
+    <label for="email"> E-mail </label>
+    <br>
+    <input type="text" id="email" name="email" value>
+    <br>
+    <br>
+    <label for="art">What's your favorite art piece:</label><br>
+     <select id="art" name="subject">
+        <option value="bold and brash">bold and brash</option>
+        <option value="self-sketch.jpg">self-sketch.jpg</option>
+        <option value="venado and mezquite">venado and mezquite</option>
+        <option value="sonora state outline">sonora state outline</option>
+        <option value="toro">toro</option>
+        <option value="batman">batman</option>
+        <option value="chappelle">chappelle</option>
+        <option value="cantinflas on a truck">cantinflas on a truck</option>
+        <option value="framed kobe dunk">framed kobe dunk</option>
+     </select>
+    <br> <br>
+    <p class="pform">Please explain why it is your favorite. </p>
+        <textarea name="message" rows="10" cols="20"></textarea>
+    <br> 
+    <p class="pform">Which of these museums would you go to:</p>
+    <input type="radio" id="louvre" name="museum" value="louvre">
+    <label for="louvre">Louvre</label> <br>
+    <input type="radio" id="phxart" name="museum" value="phxart">
+    <label for="phxart"> Phoenix Art Museum </label> <br>
+    <input type="radio" id="ASU" name="museum" value="ASU">
+    <label for="ASU"> ASU Art Museum </label>
+    <br>
+    <fieldset class="namebox">
+      <legend class="pform">who's your favorite artist</legend>
+      <input list="artists">
+      <datalist id="artists">
+        <option value="Pablo Picasso"></option>
+        <option value="Leonardo Da Vinci"></option>
+        <option value="Andy Warhol"></option>
+        <option value="Hirsoshi Nagai"></option>
+        <option value="Carlos Almaraz"></option>
+        <option value="Thomas Borbon Jr"></option>
+        <option value="Alex Colville"></option>
+      </datalist>
+    </fieldset> <br> 
+    <input type="submit" value="submit">
+    <input type="reset" value="clear">
+    <br>
+  </form>
+  <br>
+  <footer class="bottom">
+   <p class="texbottom"> Author: Thomas Borbon Jr. </p>
+   <br> <br>
+   <a class="texbottom" href="https://www.youtube.com/watch?v=x_Mt8dQzvos" target="_blank"> Combining confidence with uncertainty since the day I was born! </a>
+   
+  </footer>
+
+</body>
+</html>

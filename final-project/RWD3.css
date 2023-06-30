@@ -1,0 +1,186 @@
+  @media (min-width: 600px){
+      {}
+h2{
+    text-align: center;
+}
+.container12, .container13, .container14{
+    margin-right: 3%;
+}
+.container11{
+   max-width: 100%;
+}
+.andaz2{
+    
+    max-width: 100%;
+    display: block;
+}
+.andaz3{
+    float: left;
+}
+.andaz4{
+    text-align: center;
+}
+.andaz5{
+
+}
+.andaz6{
+    text-align: center;
+}
+.container12{
+    width: 45%;
+    float: left;
+}
+.capsule1{
+    max-width: 100%;
+}
+.capsule{
+    text-align: center;
+}
+.capsule3{
+    text-align: right;
+}
+.container13{
+    width: 45%;
+    float: left;
+}
+.park1{
+    max-width:100%;
+}
+.park2{
+    text-align: center;
+}
+.park3{
+
+}
+.container14{
+    width:40%;
+    float: right;
+}
+.millenial1{
+    max-width: 100%;
+}
+.millenial2{
+    text-align: center;
+}
+.millenial3{
+    text-align: center;
+}
+.container15{
+    width: 45%;
+    float: left
+}
+.niwa1{
+    max-width: 100%;
+}
+.niwa2{
+    text-align: center;
+}
+.niwa3{
+    text-align: center;
+}
+.footer{
+    display: inline-block;
+    width: 100%;
+}
+
+}
+ @media (min-width: 992px){
+    {}
+.containerform{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+.form{
+    height: 100%;
+}
+.hotelbook{
+    font-size: 24px;
+}
+.length{
+    font-size:24px;
+}
+.people{
+    font-size:24px;
+}
+.container11{
+    max-width: 100%;
+}
+.andaz2{
+    margin: auto;
+}
+.andaz3{
+    text-align: center;
+}
+.andaz4{
+    text-align: center;
+}
+.container12{
+    max-width: 30%;
+    float: left;
+}
+.capsule1{
+    max-width: 100%;
+}
+.capsule{
+    text-align: right;
+}
+.capsule3{
+    text-align: center;
+}
+.container13{
+max-width: 30%;
+float: left;
+}
+.park1{
+    max-width: 100%;
+}
+.park2{
+    text-align: center;
+}
+
+.park4{
+    text-align: right;
+}
+.container14{
+    max-width: 30%;
+    float: left;
+}
+.millenial1{
+    max-width: 100%;
+}
+.millenial2{
+    text-align: right;
+}
+.millenial3{
+    text-align: center;
+}
+.container15{
+    width: 100%;
+    float: left;
+    display: block;
+}
+.hotelniwa{
+    display:block;
+}
+.niwa1{
+    float: right; 
+    margin-left: 1%;
+}
+.niwa2{
+    text-align: center;
+}
+.niwa3{
+    text-align: right;
+}
+.niwa4{
+
+}
+.niwa5{
+    text-align: center;
+}
+.footer{
+    display: inline-block;
+    width: 100%
+}
+}

@@ -1,0 +1,207 @@
+
+@media (min-width: 600px){
+   {}
+div{
+   
+} 
+.container1{
+   width:100%;
+
+}
+.intro1{
+   text-align: center;
+}
+.intro2{
+   float: left;
+   max-width: 100%;
+   margin-right: 1%;
+}
+.intro3{
+   text-align: center;
+}
+.intro4{
+   text-align: center;;
+}
+.container2{
+   float: left;
+   width: 45%;
+   margin-right: 3%;
+}
+.spring2{
+}
+.spring3{
+   float: right;
+   max-width: 100%;
+   margin-left: 1%   
+
+}
+.spring4{
+   text-align: center;
+}
+.container3{
+   float: left;
+   width: 45%
+}
+.winter1{
+
+}
+.winter2{
+
+}
+.container4{
+   width: 45%;
+   float: left;
+   margin-right: 3%;
+   display: block;
+}
+.autumn1{
+
+}
+.autumn2{
+
+}
+.container5{
+   width: 45%;
+   float: left;
+}
+.summer1{
+
+}
+.summer2{
+   max-width: 100%;
+}
+.container6{
+   float: left;
+}
+.cuisine1{
+   text-align: center;
+}
+.cuisine2{
+   float: left;
+   max-width: 100%;
+   margin-right: 1%;
+}
+.cuisine3{
+   text-align: center;
+}
+.cuisine4{
+   text-align: right;
+}
+.cuisine5{
+
+}
+.cuisine6{
+
+}
+.cuisine7{
+
+}
+.container7{
+   display: inline-block;
+   width: 100%;
+}
+}
+@media (min-width: 992px){
+
+div{
+
+}
+.container1{
+   width:100%;
+}
+.intro1{
+   text-align: center;
+}
+.intro2{
+   float: left;
+   max-width: 100%;
+   margin-right: 1%;
+}
+.intro3{
+   text-align: center;
+}
+.intro4{
+   text-align: center;
+}
+.container2{
+   width: 30%;
+   float: left;
+}
+.spring2{
+   float: right;
+   max-width: 100%;
+   margin-left: 1%;
+}
+.spring3{
+   text-align: right;
+} 
+.spring4{
+   text-align: center;
+}
+.container3{
+   width: 30%;
+   float: left;
+   margin-right: 3%;
+}
+.winter1{
+   text-align: center;
+}
+.winter2{
+   text-align: center;
+}
+.container4{
+   width: 30%;
+   float: left;
+   margin-right: 3%;
+}
+.autumn1{
+   text-align: center;
+}
+.autumn2{
+   text-align: right;
+}
+.container5{
+   width: 100%;
+   float: left;
+}
+.summer1{
+   text-align: center;
+}
+.summer2{
+   max-width: 100%;
+   margin-left: 12.5%;
+}
+.summer3{
+   text-align: center;
+}
+.container6{
+   float: left;
+}
+.cuisine1{
+   text-align: center;
+}
+.cuisine2{
+   float: left;
+   max-width: 100%;
+   margin-right: 1%;
+   margin-left: 1%;
+
+}
+.cuisine3{
+ text-align: center;
+}
+.cuisine4{
+   text-align: center;
+}
+.cuisine5{
+
+}
+.cuisine6{
+
+}
+.cuisine7{
+
+}
+.container7{
+   width: 100%;
+}

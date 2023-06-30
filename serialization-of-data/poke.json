@@ -1,0 +1,37 @@
+[
+    {
+        "pokemon": "Tyranitar",
+        "basestats": "600",
+        "primary": "Rock",
+        "secondary": "Dark",
+        "generation": "2"
+    },
+    {
+        "pokemon": "Gengar",
+        "basestats": "500",
+        "primary": "Ghost",
+        "secondary": "Poison",
+        "generation": "1"
+    },
+    {
+        "pokemon": "Haxorus",
+        "basestats": "540",
+        "primary": "Dragon",
+        "secondary": "None",
+        "generation": "5"
+    },
+    {
+        "pokemon": "Ampharos",
+        "basestats": "510",
+        "primary": "Electric",
+        "secondary": "None",
+        "generation": "2"
+    },
+    {
+        "pokemon": "Metagross",
+        "basestats": "600",
+        "primary": "Steel",
+        "secondary": "Psychic",
+        "generation": "3"
+    }
+]
