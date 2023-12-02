@@ -1,379 +1,427 @@
-<!doctype html> 
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title> Art in my room </title>
-  <script src="intro.js"> 
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  </script>
-  <style>
-    @media (min-width: 992px) {
-     body {
-      background: linear-gradient(#032363, #A7A8AA);
-    }
-    .wrapper {
-      max-width: 80%;
-      margin: 10% auto;
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      /*grid-template-areas:
-       'text1 text2 text3 text4'
-       'bold5 toro6 bats7 chap8' */
-      gap: 10px;
-      background-color: #032363;
-      padding: 10px;
-      border: 10px solid black;
-      border-radius: 10px;
-    }
+  <title>PHXPS-Radio</title>
+  <meta content="Homegrown radio, SouthWest, and lighthearted" name="description">
+  <meta content="Radio, Hiphop, Rap, Trap, Phoenix, Palm Springs" name="keywords">
 
-    .wrapper > div {
-      background-color: beige;
-      text-align: center;
-      padding: 5px 0;
-      font-size: 20px; 
+  <!-- Favicons -->
 
-    }
-    .detail{
-      grid-column: 1/ span 4;
-    }
-    .bold{
-      grid-row: 2/ span 3;
-    }
-    .toro{
-      grid-row: 2/ span 3;
-    }
-    .bats{
-      grid-row: 2/ span 3;
-    }
-    .chap{
-      grid-row: 2/ span 3;
-    }
-    .bold img:hover, .bats img:hover{
-      border: solid black 10px;
-      /*float: left; */
-      margin: 0px 5px 0px 5px;
-      transition: transform 1.2s ease-in-out;
-      transform: scale(2);
-    }
-    .toro img:hover, .chap img:hover{
-      border: solid beige 10px;
-      /*float: left; */
-      margin: 0px 5px 0px 5px;
-      transition: transform 1.2s ease-in-out;
-      transform: scale(2);      
-    }
-    p{
-      margin: 0px 5px 0px 5px;
-      font-family: arial;
-    }
-    h1{
-      text-align: center;
-      font-size: 120px;
-    }
-    h2{
-      font-family: georgia;
-    }
-    /* Table CSS */
-    .art, .art td {
-      border: 1px solid black;
-      max-width: 60%; 
-      border-collapse: collapse; 
-      /*margin:auto; */
-    } 
-    .OA{
-      background-color: #D9D9D9
-    }
-    .desc{
-      background-color: #BABABA;
-      max-width: 30%; 
-     }      
-     .real:hover{
-      transition: transform 1.2s ease-in-out;
-      transform: scale(2);
-     }
-     .foot{
-       align-items: center;
-     }
-     th:first-child,
-     td:first-child{
-       width:5%;
-     }
-     th:nth-child(2),
-     td:nth-child(2) {
-       width:25%;
-     }
-     th:nth-child(3),
-     td:nth-child(3) {
-       width: 2%;
-     }
-     th:nth-child(4),
-     td:nth-child(4) {
-       width: 2%;
-     }
-     .fav{
-     }
-     .foot{
-       padding-left:35%;
-     }
-     /* NavBar */
-     .leftbar{
-       border: solid #032363 5px;
-       width: 100%;
-       text-align: center;
-       background-color: #032363;
-       display: block;
-     }
-     .navlist{
-      display: flex;
-      margin: 0%;
-      padding: 0%;
-      justify-content: center;
-     }
-     .inNav{
-      list-style-type: none;
-     }
-     .link{
-      display: inline-block;
-      width: 125px;
-      padding: 8px 0px;
-      color: white;
-      margin: 15px;
-      background-color: grey;
-      border-radius: 10px;
-     }
-     .link:hover{
-      transition: transform .5s ease-in-out;
-      transform: scale(1.2)
-     }
-     .link:link{
-      text-decoration: none;
-      font-family: sans-serif;
-      color: white;
-     }
-     form{
-      border: 2px solid black;
-      width: 20%;
-      padding: 0% 2%;
-      background-image: url(images/wallpic.jpg)
-     }
-     .namebox{
-      width: 25%; 
-     }
-     input[type=submit] {
-      background-color: grey;
-      color: white;
-      border: none;
-      margin: 5px 2px;
-      padding: 10px 10px;
-     }
-     input[type=reset]{
-      background-color: grey;
-      color: white;
-      border: none;
-      margin: 5px;
-      padding: 10px 10px;
-     }
-     .pform, label{
-      color: white;
-      font-size: 15;
-     }
-     .firstpeek{
-      color: black;
-      border: solid black 5px;
-      background-color: white;
-      border-radius: 25px;
-      font-family: helvetica;
-     }
-     .bottom{
-      background-color: #A7A8AA;
-      padding: 2% 2%
-     }
-     .texbottom{
-      text-decoration: none;
-      color: white;
-      font-size: 50px;
-      font-family: arial;
-      display: block; 
-     }
-     .media{
-      display: block;
-      border: black solid 2px;
-      background-color: white;
-      width: 30%;
-      padding-left: 65px;
-      padding-right: 65px;
-     }
-  }   
-  </style>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Gp
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
 <body>
-  <nav class="leftbar">
-    <ul class="navlist">
-      <li class="inNav"> <a class="link" href="#serve"> form </a></li>
-      <li class="inNav"> <a class="link" href="index.html"> home </a> </li>
-      <li class="inNav"> <a class="link" href= "#yessir"> table </a> </li> 
-      <li class="inNav"> <a class="link" href="https://www.youtube.com/watch?v=PQNHRcSMjxw"> no link </a></li> 
-      <li class="inNav"> <a class="link" href="#"> actual no link </a></li>
-    </ul>
-  </nav>
-  <h1 class="firstpeek">The kickstarters of creativity</h1>
-  <div class="wrapper">
-    <div class="detail"> 
-      <h2> The art in my room has many meanings, they all have different stories behind them and are reminders of who I am.</h2>
-    </div>
-    <div class="bold"> <img src="images/boldbrash.jpg" alt="contemporary squidward" width="200px" height=" 250px"> 
-      <h2><em> "Bold and Brash" <br> est.2018 </em></h2>
-        <p>Painted on canvas by my cousin she made this at my request. I had completely forgotten about this idea, than on my birthday I was surprised to see the painting was her gift to me.</p> 
-    </div>
-    <div class="toro"><img src="images/toro.jpg" alt="Thomas riding a bull" width="200px" height="250px">
-      <h2> <em> "Toro" <br> est.2020 </em> </h2>
-        <p> This was another gift from my cousin it is my personal favorite of the four on display here. Incredible display of skill and the painting is converted from a real life photograph of my father.  </p>
-    </div>
-    <div class="bats"> <img src="images/bats.jpg" alt="batman gallery" width="200px" height="250px"> 
-      <h2> <em> "Batman" <br> est.2013</em></h2>
-        <p>I can't remember where I got this picture from, all I remember is that its the oldest picture out of all these. I love batman but more specifically his villains. They are the best of any superhero.</p>
-    </div>
-    <div class="chap"> <img src="images/chap.jpg" alt="Rick James" width="200px" height="250px"> 
-      <h2> <em> "Chappelle" <br> est.2022 </em> </h2>
-        <p>The most recent of the 4. I bought this on Roosevelt street during First Friday, the "Rick James" Chappelle is my favorite skit by far. I like Chappelle or comedians in general who say outlandish things.</p>
-    </div>
-  </div>
 
-  <table id="yessir" class="art">
-    <thead>
-        <th>Name</th>
-        <th> Description</th>
-        <th> Picture</th>
-        <th>Favorites </th>
-    </thead>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
 
-    <tbody>
-      <tr>
-        <td class="OA">Framed Kobe Dunk</td>
-        <td class="desc">Kobe Bryant doing a tomahawk dunk against the New Jersey Nets. Kobe inspires me and my peers tremendously I can't remember a time when people were as good at things as they are now because of the "Mamba Mentality". Kobe was a beast.</td>
-        <td class="real"><img src="images/kobe.jpg" alt="Kobe Bryant dunking" width="150px" height="100px"></td>
-        <td> Top 3 Nba player</td>
-      </tr>
-      <tr>
-        <td class="OA">Cantinflas on a truck</td>
-        <td class="desc">This old school red truck sports a stone with a drawing of Cantinflas. Made by dad stones were his canvas varying from drawings, carvings, or forming something out of stone. Quite a formidable artist he is as creative as it gets.</td>
-        <td class="real"><img src="images/cantinflas.jpg" alt="red truck with carving" width="150px" height="100px"></td>
-        <td> Old soul at heart</td>
-      </tr>
-      <tr>
-        <td class="OA">Sonora State Outline</td>
-        <td class="desc"> Carved into and drawn by my dad this was one of his bigger pieces that he made and one of my favorites. Proud of where he was from he added the text "Puro Sonora Cabrones" quite the character if you ask me. I to am proud of this heritage as well.</td>
-        <td class="real"><img src="images/sonora-rock.jpg" alt="Sonora State Outline" width="150px" height="100px"></td>
-        <td class="fav" rowspan="3">These 3 are my favorites of all!</td>
-      </tr>
-      <tr>
-        <td class="OA">Self-Sketch.jpg</td>
-        <td class="desc">While waiting for my lunch at Taco Bell this random guy approaches me and tells me "Hey whats up bro I drew you". The drawing is pretty spot on I feel, the original drawing did not have any color so I put it in photoshop and gave it some pretty nice colors that really make it pop in my opinion. What a strange experience.</td>
-        <td class="real"><img src="images/Self-sketch.jpg" alt="sketch of myself" width="150px" height="100px"></td>
-      </tr>
-      <tr>
-        <td class="OA">Venado and mezquite</td>
-        <td class="desc">Deer and Mezquite drawn onto the stone with the outlining carved into it. My dad made all types of things relating to nature and animals, he was a cowboy at heart.</td>
-        <td class="real"><img src="images/venado.jpg" alt="rocking carving of deer" width="150px" height="100px"></td>
-      </tr>
-      <tr>
-        <td colspan="4" style="text-align: center;"> <em> The decorations in my room are all tremendous motivators and inspire me very often, when I feel blue the decor in my room always alleviates me. </em> </td>
-      </tr>
-    </tbody>
-    <tfoot >
-      <tr>
-        <td class="foot" colspan="4"> <strong>Source: My Mind and Room </strong></td>
-      </tr>
-    </tfoot>
-  </table>
-  <br>
-  <div class="media">
-    <h2> Presenting my oldest and biggest art piece! </h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dfkFNlFe2PI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-</iframe>
-  </div>
-  <br>
-  <div id="playtime" style="font-family: helvetica;"></div>
-  <br>
-  <button onclick="document.getElementById('cheetos').src='images/cheetoos.jpg'"> Press this </button>
-  <img id="cheetos" src="images/gulp.jpg" style="width: 150px;">
-  <button onclick="document.getElementById('cheetos').src='images/gulp.jpg'"> Press that </button>
-  <h2> My Top 5 artworks on this page.</h2>
-  <ol style="list-style-type:upper-roman;">
-    <li> Toro 
-        <ul style="list-style-type: square;">
-          <li>Depiction of my father</li>
-          <li>Made by hand</li>
-          <li>Awesome background</li>
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">PHXPS Radio<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Inspirations</a></li>
+          <li><a class="nav-link scrollto" href="#myCarousel">Creation</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Shop</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
-    </li>
-    <li>Sonora State Outline</li>
-    <li>Venado and Mezquite</li>
-    <li>Self-Sketch.jpg</li>
-    <li>Bold and Brash </li>
-  </ol>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-  <form id="serve" method="post" action="http://smccweb.org/example/contactA.php">
-    <h2 class="pform">Buen dia amigo!</h2>
-    <label for="fname"> Full name </label>
-    <br>
-    <input type="text" id="fname" name="name" value>
-    <br>
-    <br>
-    <label for="email"> E-mail </label>
-    <br>
-    <input type="text" id="email" name="email" value>
-    <br>
-    <br>
-    <label for="art">What's your favorite art piece:</label><br>
-     <select id="art" name="subject">
-        <option value="bold and brash">bold and brash</option>
-        <option value="self-sketch.jpg">self-sketch.jpg</option>
-        <option value="venado and mezquite">venado and mezquite</option>
-        <option value="sonora state outline">sonora state outline</option>
-        <option value="toro">toro</option>
-        <option value="batman">batman</option>
-        <option value="chappelle">chappelle</option>
-        <option value="cantinflas on a truck">cantinflas on a truck</option>
-        <option value="framed kobe dunk">framed kobe dunk</option>
-     </select>
-    <br> <br>
-    <p class="pform">Please explain why it is your favorite. </p>
-        <textarea name="message" rows="10" cols="20"></textarea>
-    <br> 
-    <p class="pform">Which of these museums would you go to:</p>
-    <input type="radio" id="louvre" name="museum" value="louvre">
-    <label for="louvre">Louvre</label> <br>
-    <input type="radio" id="phxart" name="museum" value="phxart">
-    <label for="phxart"> Phoenix Art Museum </label> <br>
-    <input type="radio" id="ASU" name="museum" value="ASU">
-    <label for="ASU"> ASU Art Museum </label>
-    <br>
-    <fieldset class="namebox">
-      <legend class="pform">who's your favorite artist</legend>
-      <input list="artists">
-      <datalist id="artists">
-        <option value="Pablo Picasso"></option>
-        <option value="Leonardo Da Vinci"></option>
-        <option value="Andy Warhol"></option>
-        <option value="Hirsoshi Nagai"></option>
-        <option value="Carlos Almaraz"></option>
-        <option value="Thomas Borbon Jr"></option>
-        <option value="Alex Colville"></option>
-      </datalist>
-    </fieldset> <br> 
-    <input type="submit" value="submit">
-    <input type="reset" value="clear">
-    <br>
-  </form>
-  <br>
-  <footer class="bottom">
-   <p class="texbottom"> Author: Thomas Borbon Jr. </p>
-   <br> <br>
-   <a class="texbottom" href="https://www.youtube.com/watch?v=x_Mt8dQzvos" target="_blank"> Combining confidence with uncertainty since the day I was born! </a>
-   
-  </footer>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up"> 
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1>Entertainment at it's finest with PHXPS Radio<span>!</span></h1>
+          <h2>Mixture of Past, Present, and Future. </h2>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/OddFutureSansOcean.jpg" class="img-fluid" alt="Odd Future">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Inspirations </h3>
+            <p class="fst-italic" style="text-align: center;" >
+              Growing up I was always surrounded by different genres of music. Whether it be my mom waking me up to her cumbias on a Saturday morning, listening to norteñas in my dad's truck, or even just browsing  YouTube watching whatever music video I could find. My music taste is rather diverse but nothing ever impacted me like Odd Future. </p>
+             <p> My first time experiencing Odd Future was in Hermosillo when my cousin put on Tyler the creator's "Yonkers" I was so intrigued by the beat selection and strange music video. All of their content leaves a weird impression on the viewer. They made me feel comfortable in being myself, all the crazy outlandish stuff they were doing back then certainly wouldn't fly now but because of there reputation they were able to do it all with no repercussions. </p>
+            <a href="https://youtu.be/0FcDXL5Aw0o" target="_blank" style="font-size: 30px">  Click here for my favorite Odd Future music video made by Earl Sweatshirt.</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= Style Influence Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="image col-lg-6" style='background-image: url("assets/img/stayInside.jpg");' data-aos="fade-right"></div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="" data-aos="zoom-in" data-aos-delay="150">
+             <h3 style=><strong>Style Influence </strong></h3>
+             <p> In 2018, Earl Sweatshirt collaborated with Knxwledge and released a series of music mixes called "RBMA Radio". I only stumbled upon it in late 2022 and although RBMA Radio no longer exists I listen to it regularly while doing schoolwork or anything else in my room. I love the beats and track selections they suit each other so well and its almost like the songs create a scene and the transitions are so smooth.</p>
+             <p>My style is heavily influenced by the graphics used in many of the RBMA radio covers. They remind me of the Wojak meme, they are very easy to make and the mind is the only limitation when it comes creating graphics.</p>
+             <p>My track selections for PHXPS are also very different from Earl and Knxwledge, but all in all I still try to emulate the overall aesthetic that RBMA Radio has. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Style Influence Section -->
+
+    <!-- ======= Carousel Section ======= -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="150">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/skyLine.jpg" class="d-block w-100" alt="Thomas parachuting" width="500px" height="750px">
+  
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>New Episode!</h1>
+              <p>Returning with better audio and better transitions with even funnier commentary!</p>
+              <p><a class="btn btn-lg btn-primary" href="https://youtu.be/-M7L_j1nMt8" target="_blank">Listen to Episode 2!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/Porchdark.jpg" class="d-block w-100" alt="Thomas and Andres on couch" width="500px" height="750px">
+  
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Episode 2.5 out now!</h1>
+              <p>Our best radio to be released!</p>
+              <p><a class="btn btn-lg btn-primary" href="https://youtu.be/PfXpH0mlT8Q?si=Qg2KWuo7XEzYR7h8" target="_blank" >Listen now!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">  
+          <img src="assets/img/e36-Recovered.jpg" class="d-block w-100" alt="BMW in space" width="500px" height="750px">
+  
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Palm Springs 2011</h1>
+              <p>Portal into the past and all the good songs I listened to with my family!</p>
+              <p><a class="btn btn-lg btn-primary" href="https://youtu.be/2g_EWZXVWiA" target="_blank">Listen to Episode 1.5!</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>   
+    <!-- End Carousel Section -->
+    <!--Music types section-->
+ <section id="counts" class="counts">
+  <div class="container" data-aos="fade-up">
+
+    <div class="row no-gutters">
+      <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100"></div>
+      <div class="col-xl-7 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+        <div class="content d-flex flex-column justify-content-center">
+          <h3>The Creation Process</h3>
+          <p>
+            PHXPS radio is always based on the impression of the cover art graphic being used for each episode. The music genres then follow to create the aesthetic.
+          </p>
+          <div class="row">
+            <div class="col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="bi bi-file-earmark-pdf-fill"></i>
+                <p> <strong>PHXPS Radio cover arts</strong> are one of the essential components to PHXPS Radio and often times direct the music composition that will be used in the episode. Similar to looking at art in a museum while being complimented by music.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="bi bi-music-note"></i>
+                <p><strong>Music selection</strong> varies from episodes but Rap is the most consistent genre that appears on PHXPS radio, </p>
+                <p>Different music genres will be introduced to the radio the main episodes often times have Rap while the in between episodes have experimental music genres like in the 1.5 episode.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="bi bi-discord"></i>
+                <p> Once the cover art is created and the music tracks have been selected the episode is then <strong>recorded in a discord voice chat</strong> amongst my friends and I</p>
+                <p>I beleve this is how the overall laid back vibe is achieved because the commentary doesn't feel artificial and its music we enjoy.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="bi bi-youtube"></i>
+                
+                <p>Once the <strong>audio clips have been edited</strong> the radio is ready to be uploaded to youtube and visible to be seen by viewers!</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- End .content-->
+      </div>
+    </div>
+
+  </div>
+</section><!--End music types section-->
+<!-- ======= Softwares Section ======= -->
+<section id="myCarousel" class="team">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      
+      <p>Softwares used</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="member" data-aos="fade-up" data-aos-delay="100">
+          <div class="member-img">
+            <img src="assets/img/PremiereIcon.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Adobe Premiere Pro</h4> 
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="member" data-aos="fade-up" data-aos-delay="200">
+          <div class="member-img">
+            <img src="assets/img/photoshopIcon.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Adobe Photoshop</h4>
+          </div>
+        </div>
+      </div>
+
+      <div  class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="member" data-aos="fade-up" data-aos-delay="300">
+          <div class="member-img">
+            <img src="assets/img/Audition.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>Adobe Audition</h4>
+          </div>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+  </div>
+</section><!-- End Softwares Section -->
+
+         <!-- ======= Cta Section ======= -->
+         <section id="cta" class="cta">
+          <div class="container" data-aos="zoom-in">
+    
+            <div class="text-center"> 
+              <h3>Subscribe to PHXPS Radio!</h3>
+              <p> Enjoy the quirky, awkward, banging music!</p>
+              <a class="cta-btn" href="https://www.youtube.com/@PHXPSradio" target="_blank">Subscribe</a>
+            </div>
+    
+          </div>
+        </section><!-- End Cta Section -->
+
+    <!-- ======= Store Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div id="my-store-89287325"></div>
+      <div>
+      <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?89287325&data_platform=code&data_date=2023-07-06" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-89287325");</script>
+      </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End tore Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <p>Contact</p>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Phoenix and Palm Springs</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>ThomasB@PHXPSRadio.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>123-456-7890</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6">
+            <div class="footer-info">
+              <h3>PHXPS Radio<span>.</span></h3>
+              <p>
+                Phoenix and Palm Springs <br>
+                <br><br>
+                <strong>Phone:</strong> 123-456-7890<br>
+                <strong>Email:</strong> ThomasB@PHXPSRadio.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://www.youtube.com/@PHXPSradio" class="youtube"><i class="bx bxl-youtube"></i></a>                
+                <a href="https://www.instagram.com/tomasbonbon/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>PHXPS Radio</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
